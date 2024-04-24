@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="w-5/6 mb-4 md:mb-0 sm:flex flex-row justify-between items-center gap-28">
               <div className="flex items-center w-1/3 py-4">
                 <a href="/" className="flex items-center py-5 px-2">
-                  <img src="/images/work-from-home.png" alt="Logo" className="h-16 w-16 mr-2" />
+                  <img src="images/work-from-home.png" alt="Logo" className="h-16 w-16 mr-2" />
                   <span className="font-bold text-white text-5xl ml-4">Homely</span>
                 </a>
               </div>

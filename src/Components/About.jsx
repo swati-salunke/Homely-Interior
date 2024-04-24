@@ -25,7 +25,7 @@ const About = () => {
         </div>
         <img
           className="mt-8 rounded-lg object-cover"
-          src="/images/about-interior.jpg" // Replace with your image path
+          src="images/about-interior.jpg" // Replace with your image path
           alt="About Us Image"
         />
       </div>

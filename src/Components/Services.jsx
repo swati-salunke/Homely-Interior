@@ -50,7 +50,7 @@ const Service = () => {
           {services.map(service => (
             <div key={service.id} className="flex flex-col items-center">
               <div className="w-24 h-24 bg-gray-950 rounded-full flex justify-center items-center relative hover:bg-rotate">
-                <img src={`/images/${service.icon}`} alt={service.title} className="w-14 h-14 mb-4 absolute top-5 transition-transform transform hover:rotate-90" />
+                <img src={`images/${service.icon}`} alt={service.title} className="w-14 h-14 mb-4 absolute top-5 transition-transform transform hover:rotate-90" />
               </div>
               <h3 className="text-xl md:text-2xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 text-center">{service.description}</p>
