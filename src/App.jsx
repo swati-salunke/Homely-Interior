@@ -19,9 +19,9 @@ const App = () => {
   <Router>
       <Header/> 
       <Routes>
-  <Route path="/Homely-Interior/" element={<Home />} />
-  <Route path="/Homely-Interior/about" element={<About />} />
-  <Route path="/Homely-Interior/counter" element={<Counter />} />
+  <Route path="/homely-interior/" element={<Home />} />
+  <Route path="/homely-interior/about" element={<About />} />
+  <Route path="/homely-interior/counter" element={<Counter />} />
   <Route path="/Homely-Interior/services" element={<Services />} />
   <Route path="/Homely-Interior/imagecard" element={<ImageCard />} />
   <Route path="/Homely-Interior/testimonialslider" element={<TestimonialSlider />} />
