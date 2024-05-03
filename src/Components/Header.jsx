@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -44,24 +45,24 @@ const Header = () => {
         </div>
       </div>
 
-      <nav className={`w-full text-white fixed top-0 sm:top-14 z-10 transition-colors duration-300 ${scrolled ? 'bg-black md:top-0' : 'bg-black md:bg-transparent'}`}>
+      <nav className={`w-full fixed top-0 sm:top-10 z-10 transition-colors duration-300 ${scrolled ? 'bg-yellow-50 text-black md:top-0' : 'bg-black text-white md:bg-black'}`}>
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center">
             {/* Logo and brand name */}
             <div className="flex items-center">
-              <a href="/Homely-Interior/" className="flex items-center py-5 px-2">
-                <img src="images/work-from-home.png" alt="Logo" className="h-14 w-14 mr-2" />
-                <span className="font-bold text-white text-4xl ml-4">Homely</span>
-              </a>
-            </div>
-            <div className="md:flex md:items-center md:space-x-10 font-normal text-xl hidden">
-              <a href="/Homely-Interior/" className="py-5 px-3 hover:text-yellow-400 block">Home</a>
-              <a href="/Homely-Interior/about" className="py-5 px-3 hover:text-yellow-400 block">About</a>
-              <a href="/Homely-Interior/services" className="py-5 px-3 hover:text-yellow-400 block">Service</a>
-              <a href="/Homely-Interior/imagecard" className="py-5 px-3 hover:text-yellow-400 block">Gallery</a>
-              <a href="/Homely-Interior/testimonialslider" className="py-5 px-3 hover:text-yellow-400 block">Testimonial</a>
-              <a href="/Homely-Interior/contact" className="py-5 px-3 hover:text-yellow-400 block">Contact</a>
-            </div>
+            <Link to="/Homely-Interior/" className="flex items-center py-5 px-2">
+              <img src="images/work-from-home.png" alt="Logo" className="h-14 w-14 mr-2" />
+              <span className={`font-bold text-4xl ml-4 ${scrolled ? 'text-black' : 'text-white'}`}>Homely</span>
+            </Link>
+          </div>
+          <div className="md:flex md:items-center md:space-x-10 font-normal text-xl hidden">
+            <Link to="/Homely-Interior/" className="py-5 px-3 hover:text-yellow-400 block">Home</Link>
+            <Link to="/Homely-Interior/about" className="py-5 px-3 hover:text-yellow-400 block">About</Link>
+            <Link to="/Homely-Interior/services" className="py-5 px-3 hover:text-yellow-400 block">Services</Link>
+            <Link to="/Homely-Interior/imagecard" className="py-5 px-3 hover:text-yellow-400 block">Gallery</Link>
+            <Link to="/Homely-Interior/testimonialslider" className="py-5 px-3 hover:text-yellow-400 block">Testimonial</Link>
+            <Link to="/Homely-Interior/contact" className="py-5 px-3 hover:text-yellow-400 block">Contact</Link>
+          </div>
             {/* Toggle button */}
             <div className="md:hidden">
               <button onClick={() => setIsNavOpen((prev) => !prev)}>
@@ -72,13 +73,13 @@ const Header = () => {
 
           {/* Toggled menu */}
           <div className={`md:hidden ${isNavOpen ? 'flex flex-col items-start mt-1 text-lg py-4' : 'hidden'}`}>
-            <a href="/Homely-Interior/" className="py-4 px-3 hover:text-yellow-400 block">Home</a>
-            <a href="/Homely-Interior/about" className="py-4 px-3 hover:text-yellow-400 block">About</a>
-            <a href="/Homely-Interior/services" className="py-4 px-3 hover:text-yellow-400 block">Service</a>
-            <a href="/Homely-Interior/imagecard" className="py-4 px-3 hover:text-yellow-400 block">Gallery</a>
-            <a href="/Homely-Interior/testimonialslider" className="py-5 px-3 hover:text-yellow-400 block">Testimonial</a>
-            <a href="/Homely-Interior/contact" className="py-4 px-3 hover:text-yellow-400 block">Contact</a>
-          </div>
+          <Link to="/Homely-Interior/" className="py-4 px-3 hover:text-yellow-400 block">Home</Link>
+          <Link to="/Homely-Interior/about" className="py-4 px-3 hover:text-yellow-400 block">About</Link>
+          <Link to="/Homely-Interior/services" className="py-4 px-3 hover:text-yellow-400 block">Services</Link>
+          <Link to="/Homely-Interior/imagecard" className="py-4 px-3 hover:text-yellow-400 block">Gallery</Link>
+          <Link to="/Homely-Interior/testimonialslider" className="py-5 px-3 hover:text-yellow-400 block">Testimonial</Link>
+          <Link to="/Homely-Interior/contact" className="py-4 px-3 hover:text-yellow-400 block">Contact</Link>
+        </div>
 
           {/* Desktop menu */}
 
