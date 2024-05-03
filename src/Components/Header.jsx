@@ -49,7 +49,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             {/* Logo and brand name */}
             <div className="flex items-center">
-              <a href="/" className="flex items-center py-5 px-2">
+              <a href="/Homely-Interior/" className="flex items-center py-5 px-2">
                 <img src="images/work-from-home.png" alt="Logo" className="h-14 w-14 mr-2" />
                 <span className="font-bold text-white text-4xl ml-4">Homely</span>
               </a>
