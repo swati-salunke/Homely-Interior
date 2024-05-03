@@ -3,7 +3,7 @@ import React from 'react';
 const Highlighted = () => {
   return (
     <>
-    <section className="relative bg-[url('/images/highlighted.jpg')] bg-fixed bg-cover bg-center py-32 text-white h-80 sm:h-60 z-0">
+    <section className="relative bg-[url('/images/bg-for-testimonial.jpg')] bg-fixed bg-cover bg-center py-32 text-white h-80 sm:h-60 z-0">
       <div className="absolute inset-0 bg-black opacity-70"></div>
       <div className="flex flex-col justify-center items-center -mt-16 mx-auto relative z-10 text-center">
         <h2 className="text-4xl font-bold mb-4">Homely Interior Designs</h2>

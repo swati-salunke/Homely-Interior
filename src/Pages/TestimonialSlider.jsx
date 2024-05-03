@@ -34,7 +34,7 @@ const TestimonialSlider = () => {
 
   return (
     <>
-    <div className="relative bg-[url('/images/bg-for-testimonial.jpg')] overflow-hidden bg-fixed bg-cover bg-center py-60 text-white h-80 sm:h-96 z-0 flex flex-col item-center justify-center text-center">
+    <div className="relative bg-[url('/images/highlighted.jpg')] overflow-hidden bg-fixed bg-cover bg-center py-72 text-white h-80 sm:h-96 z-0 flex flex-col item-center justify-center text-center">
     <div className="absolute inset-0 bg-black opacity-65"></div>
     <h2 className='text-3xl sm:text-5xl mb-16 text-white z-10'>What Client Say?</h2>
     <Slider {...settings}>
