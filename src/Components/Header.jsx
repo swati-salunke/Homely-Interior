@@ -55,8 +55,8 @@ const Header = () => {
               </a>
             </div>
             <div className="md:flex md:items-center md:space-x-10 font-normal text-xl hidden">
-              <a href="/Homely-Interior/" className="py-5 px-3 hover:text-yellow-400 block">Home</a>
-              <a href="/Homely-Interior/about" className="py-5 px-3 hover:text-yellow-400 block">About</a>
+              <a href="/homely-interior/" className="py-5 px-3 hover:text-yellow-400 block">Home</a>
+              <a href="/homely-interior/about" className="py-5 px-3 hover:text-yellow-400 block">About</a>
               <a href="/Homely-Interior/services" className="py-5 px-3 hover:text-yellow-400 block">Service</a>
               <a href="/Homely-Interior/imagecard" className="py-5 px-3 hover:text-yellow-400 block">Gallery</a>
               <a href="/Homely-Interior/testimonialslider" className="py-5 px-3 hover:text-yellow-400 block">Testimonial</a>
