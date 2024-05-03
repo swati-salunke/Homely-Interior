@@ -19,14 +19,14 @@ const App = () => {
   <Router>
       <Header/> 
       <Routes>
-        <Route path="/homely-interior" element={<Home/>}/>
-        <Route path='/about' element={<About/>} />
-        <Route path='/counter' element={<Counter/>}/>
-        <Route path='/services' element={<Services/>}/>
-        <Route path='/imagecard' element={<ImageCard/>}/>
-        <Route path='/testimonialslider' element={<TestimonialSlider/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-      </Routes>
+  <Route path="/Homely-Interior/" element={<Home />} />
+  <Route path="/Homely-Interior/about" element={<About />} />
+  <Route path="/Homely-Interior/counter" element={<Counter />} />
+  <Route path="/Homely-Interior/services" element={<Services />} />
+  <Route path="/Homely-Interior/imagecard" element={<ImageCard />} />
+  <Route path="/Homely-Interior/testimonialslider" element={<TestimonialSlider />} />
+  <Route path="/Homely-Interior/contact" element={<Contact />} />
+</Routes>
       <Footer/>
     </Router>
     </>
