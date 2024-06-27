@@ -1,4 +1,4 @@
-import React from 'react'
+import { useRef } from 'react';
 import Hero from './Hero'
 import About from './About'
 import Counter from './Counter'
@@ -11,16 +11,17 @@ import Contact from './Contact'
 
 
 const Home = () => {
+  const contactRef = useRef(null);
   return (
     <>
       <Hero />
       <About />
       <Counter />
       <Services />
-      <Highlighted />
+      <Highlighted contactRef={contactRef}/>
       <ImageCard />
       <TestimonialSlider />
- <Contact/>
+      <Contact ref={contactRef}/>
     </>
   )
 }

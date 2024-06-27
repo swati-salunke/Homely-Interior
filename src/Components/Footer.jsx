@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className='w-full h-[38rem] sm:h-auto bg-black py-0 sm:py-0 relative'>
+      <div className='w-full md:h-[10rem] h-[23rem] bg-black py-0 sm:py-0 relative'>
         <footer className="w-full text-white">
           <div className="container mx-auto flex flex-col md:flex items-center justify-between px-4">
             {/* Social Icons */}

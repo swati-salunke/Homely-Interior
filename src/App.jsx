@@ -1,4 +1,4 @@
-import React from 'react'
+import { useRef } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import About from './Pages/About';
@@ -14,6 +14,7 @@ import Header from './Components/Header';
 
 
 const App = () => {
+  const contactRef = useRef(null);
   return (
     <>
   <Router>
@@ -24,7 +25,7 @@ const App = () => {
         <Route path="/Homely-Interior/services" element={<Services />} />
         <Route path="/Homely-Interior/imagecard" element={<ImageCard />} />
         <Route path="/Homely-Interior/testimonialslider" element={<TestimonialSlider />} />
-        <Route path="/Homely-Interior/contact" element={<Contact />} />
+        <Route path="/Homely-Interior/contact" element={<Contact ref={contactRef}/>} />
       </Routes>
       <Footer/>
     </Router>

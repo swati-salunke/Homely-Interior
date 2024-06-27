@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const Counter = () => {
-  const [homelyPlaces, setHomelyPlaces] = useState(0);
-  const [happyCustomers, setHappyCustomers] = useState(0);
+  const [transformationProjects, setTransformationProjects] = useState(0);
+  const [happyClients, setHappyClients] = useState(0);
+  const [expertDesigners, setExpertDesigners] = useState(0);
+  const [projectsDelivered, setProjectDelivered] = useState(0);
+
   const [countersIncremented, setCountersIncremented] = useState(false);
   const counterRef = useRef(null);
 
@@ -18,25 +21,43 @@ const Counter = () => {
         if (entry.isIntersecting && !countersIncremented) {
           const target = entry.target;
           const observer = new IntersectionObserver(() => {
-            const incrementHomelyPlaces = () => {
-              setHomelyPlaces(prevCount => {
+            const incrementTransformationProjects = () => {
+              setTransformationProjects(prevCount => {
                 const increment = Math.ceil(200 / 100); // Counter increases to 200
                 const nextCount = Math.min(prevCount + increment, 200);
                 return nextCount;
               });
             };
 
-            const incrementHappyCustomers = () => {
-              setHappyCustomers(prevCount => {
+            const incrementHappyClients = () => {
+              setHappyClients(prevCount => {
                 const increment = Math.ceil(300 / 100); // Counter increases to 300
                 const nextCount = Math.min(prevCount + increment, 300);
                 return nextCount;
               });
             };
 
+            const incrementExpertDesigners = () => {
+              setExpertDesigners(prevCount => {
+                const increment = Math.ceil(20 / 100); // Counter increases to 300
+                const nextCount = Math.min(prevCount + increment, 20);
+                return nextCount;
+              });
+            };
+
+            const incrementProjectsDelivered = () => {
+              setProjectDelivered(prevCount => {
+                const increment = Math.ceil(400 / 100); // Counter increases to 300
+                const nextCount = Math.min(prevCount + increment, 400);
+                return nextCount;
+              });
+            };
+
             const interval = setInterval(() => {
-              incrementHomelyPlaces();
-              incrementHappyCustomers();
+              incrementTransformationProjects();
+              incrementHappyClients();
+              incrementExpertDesigners();
+              incrementProjectsDelivered();
             }, 100); // Update counters every second
 
             return () => clearInterval(interval); // Clean up interval
@@ -67,31 +88,31 @@ const Counter = () => {
           <div className='flex flex-col items-center md:flex-row md:justify-center md:gap-32 w-full justify-center gap-4'>
           <div className="counter text-white z-10 flex flex-col items-center gap-6">
       <div className='flex'>
-        <span className='text-6xl font-bold text-yellow-500'>{homelyPlaces}</span>
+        <span className='text-6xl font-bold text-yellow-500'>{transformationProjects}</span>
         <span className="text-5xl font-bold text-yellow-500">+</span>
         </div>
-        <p className='text-xl'>Homely Places</p>
+        <p className='text-xl'>Transformation Projects</p>
       </div>
       <div className="counter text-white z-10 flex flex-col items-center gap-6">
       <div className='flex'>
-        <span className='text-6xl font-bold text-yellow-500'>{happyCustomers}</span>
+        <span className='text-6xl font-bold text-yellow-500'>{happyClients}</span>
         <span className="text-5xl font-bold text-yellow-500">+</span>
         </div>
-        <p className='text-xl'>Happy Customer</p>
+        <p className='text-xl'>Happy Clients</p>
       </div>
       <div className="counter text-white z-10 flex flex-col items-center gap-6">
       <div className='flex'>
-        <span className='text-6xl font-bold text-yellow-500'>{happyCustomers}</span>
+        <span className='text-6xl font-bold text-yellow-500'>{expertDesigners}</span>
         <span className="text-5xl font-bold text-yellow-500">+</span>
         </div>
-        <p className='text-xl'>Happy Customer</p>
+        <p className='text-xl'>Expert Designers</p>
       </div>
       <div className="counter text-white z-10 flex flex-col items-center gap-6">
       <div className='flex'>
-        <span className='text-6xl font-bold text-yellow-500'>{happyCustomers}</span>
+        <span className='text-6xl font-bold text-yellow-500'>{projectsDelivered}</span>
         <span className="text-5xl font-bold text-yellow-500">+</span>
         </div>
-        <p className='text-xl'>Happy Customer</p>
+        <p className='text-xl'>Projects Delivered</p>
       </div>
       </div>
       </div>
